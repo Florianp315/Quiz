@@ -8,3 +8,8 @@ class Program
     static int posY;
     static int tamano;
 
+    static void main(string[] args)
+    {
+
+        inicializarJuego();
+    }
