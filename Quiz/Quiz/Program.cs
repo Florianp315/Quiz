@@ -38,6 +38,18 @@ class Program
                 case ConsoleKey.RightArrow:
                     MoverJugador(0, 1);
                     break;
+                case ConsoleKey.LeftArrow:
+                    MoverJugador(0, -1);
+                    break;
+                case ConsoleKey.UpArrow:
+                    MoverJugador(-1, 0);
+                    break;
+                case ConsoleKey.DownArrow:
+                    MoverJugador(1, 0);
+                    break;
+                case Consolekey.escape:
+                    salir = true;
+                    break;
 
                     
 
