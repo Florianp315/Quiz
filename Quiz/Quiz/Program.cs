@@ -4,9 +4,9 @@ class Program
 {
     static int[,] tablero;
     static int puntaje;
-    static int posX;
-    static int posY;
-    static int tamano;
+    static int posicionX;
+    static int posicionY;
+    static int tamanoTablero;
 
     static void Main(string[] args)
     {
@@ -27,8 +27,19 @@ class Program
             Console.WriteLine("4. Flecha Abajo");
             Console.WriteLine("Tecla Esc Para salir del juego");
 
+            //CONSOLA
+
+            ConsoleKeyInfo tecla = Console.ReadKey();
+            Console.Clear();
 
 
+            switch (tecla.Key) 
+            {
+                case ConsoleKey.RightArrow:
+                    MoverJugador(0, 1);
+                    break;
+
+                    
 
 
-        }
+        
