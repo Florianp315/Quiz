@@ -75,6 +75,23 @@ class Program
     }
 
     static void MostrarTablero()
+    {
+        for (int fila = 0; fila < tamanoTablero; fila++)
+        {
+            for (int columna = 0; columna < tamanoTablero; columna++)
+            {
+                if (fila == posicionX && columna == posicionY)
+                {
+                    Console.Write("0 ");
+                }
+                else
+                {
+                    Console.Write(tablero[fila, columna] + "");
+                }
+            }
+
+        }
+    }
               
     
 
