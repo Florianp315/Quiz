@@ -61,15 +61,23 @@ class Program
 
         tamanoTablero = 5;
         tablero = new int[tamanoTablero, tamanoTablero];
-        Random generadorAleatorio =new Random();
-        for (int fila = 0; fila < tamanoTablero; fila++) 
+        Random generadorAleatorio = new Random();
+        for (int fila = 0; fila < tamanoTablero; fila++)
         {
             for (int columna = 0; columna < tamanoTablero; columna++) ;
             {
                 tablero[fila, columna] = generadorAleatorio.Next(1, 10);
-
             }
+        }
+        posicionX = 0;
+        posicionX = 0;
+        puntaje = 0;
     }
+
+    static void MostrarTablero()
+              
+    
+
 
                     
 
