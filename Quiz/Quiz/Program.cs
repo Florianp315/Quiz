@@ -92,11 +92,33 @@ class Program
 
         }
     }
-              
+
+    static void MoverJugador(int desplazamientoX, int desplazamientoY)
+    {
+        int nuevaPosX = posicionX + desplazamientoX;
+        int nuevaPosY = posicionY + desplazamientoY;
+
+        if (nuevaPosX >= 0 && nuevaPosY < tamanoTablero && nuevaPosY >= 0 && nuevaPosY < tamanoTablero)
+        {
+            puntaje += tablero[nuevaPosX, nuevaPosY];
+            tablero[posicionX, posicionY] = 0;
+            posicionX = nuevaPosX;
+            posicionY = nuevaPosY;
+        }
+    }
+}
+
+        
     
+        
+        
 
 
-                    
+
+
+
+
+
 
 
         
