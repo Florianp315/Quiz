@@ -47,7 +47,7 @@ class Program
                 case ConsoleKey.DownArrow:
                     MoverJugador(1, 0);
                     break;
-                case Consolekey.escape:
+                case ConsoleKey.Escape:
                     salir = true;
                     break;
 
@@ -59,12 +59,12 @@ class Program
     {
         //Tamaño Tablero
 
-        tamanoTablero = 5;
+        tamanoTablero = 5; // Tamaño del tablero
         tablero = new int[tamanoTablero, tamanoTablero];
         Random generadorAleatorio = new Random();
         for (int fila = 0; fila < tamanoTablero; fila++)
         {
-            for (int columna = 0; columna < tamanoTablero; columna++) ;
+            for (int columna = 0; columna < tamanoTablero; columna++)
             {
                 tablero[fila, columna] = generadorAleatorio.Next(1, 10);
             }
@@ -86,10 +86,10 @@ class Program
                 }
                 else
                 {
-                    Console.Write(tablero[fila, columna] + "");
+                    Console.Write(tablero[fila, columna] + " ");
                 }
             }
-
+            Console.WriteLine();
         }
     }
 
@@ -107,18 +107,3 @@ class Program
         }
     }
 }
-
-        
-    
-        
-        
-
-
-
-
-
-
-
-
-
-        
