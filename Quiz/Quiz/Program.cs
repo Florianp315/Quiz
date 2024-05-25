@@ -13,7 +13,7 @@ class Program
         InicializarJuego();
 
         bool salir = false;
-        while (!salir) 
+        while (!salir)
         {
             // ORGANIZAR TABLERO
 
@@ -33,7 +33,7 @@ class Program
             Console.Clear();
 
 
-            switch (tecla.Key) 
+            switch (tecla.Key)
             {
                 case ConsoleKey.RightArrow:
                     MoverJugador(0, 1);
@@ -50,6 +50,26 @@ class Program
                 case Consolekey.escape:
                     salir = true;
                     break;
+
+            }
+        }
+    }
+
+    static void InicializarJuego()
+    {
+        //Tamaño Tablero
+
+        tamanoTablero = 5;
+        tablero = new int[tamanoTablero, tamanoTablero];
+        Random generadorAleatorio =new Random();
+        for (int fila = 0; fila < tamanoTablero; fila++) 
+        {
+            for (int columna = 0; columna < tamanoTablero; columna++) ;
+            {
+                tablero[fila, columna] = generadorAleatorio.Next(1, 10);
+
+            }
+    }
 
                     
 
